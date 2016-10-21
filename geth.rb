@@ -6,6 +6,12 @@ class Geth < Formula
   homepage 'https://github.com/ethereumproject/go-ethereum'
   url 'https://github.com/ethereumproject/go-ethereum/releases/download/v3.0.1/geth-classic-darwin-65f1fbc.zip'
 
+  bottle do
+    revision 2
+    url 'https://github.com/ethereumproject/go-ethereum/releases/download/v3.0.1/geth-classic-darwin-65f1fbc.zip'
+    sha256 'eeb55964343e2b36695ff61700bc3058c398d4fb948cbe34ced317bddf744b01'
+  end
+
   depends_on 'go' => :build
 
   def install
