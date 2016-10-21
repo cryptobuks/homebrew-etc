@@ -1,6 +1,4 @@
-Homebrew Tap for Ethereum Classic (ETC)
-
-## Getting Homebrew
+## Homebrew for Ethereum Classic (ETC)
 
 Homebrew is the missing package manager for OSX. You can find installation instructions at www.brew.sh. Alternatively open your terminal and type in:
 
@@ -8,9 +6,9 @@ Homebrew is the missing package manager for OSX. You can find installation instr
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## Adding Homebrew tap for Ethereum Classic (ETC)
+## Adding ETC Homebrew tap
 
-ETC is not part of standard Homebrew, so you need to add a tap first. Open your terminal and enter:
+ETC is not part of standard Homebrew, so you need to add a tap to install its packages. Open your terminal and enter:
 
 ```
 brew tap ethereumclassic/etc
@@ -41,9 +39,10 @@ If you want to run Parity in a geth-compatible mode (as a backend for Mist/RPC):
 brew install parity --geth-compatible
 ```
 
-Other Ethcore utilities:
+## Installing other utilities:
 
 ```
+brew install solidity
 brew install ethabi
 brew install ethkey
 brew install ethstore
