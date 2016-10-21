@@ -4,7 +4,7 @@ class Geth < Formula
   version '3.0.1'
 
   homepage 'https://github.com/ethereumproject/go-ethereum'
-  url 'https://github.com/ethereumproject/go-ethereum.git', :branch => 'master'
+  url 'https://github.com/ethereumproject/go-ethereum/releases/download/v3.0.1/geth-classic-darwin-65f1fbc.zip'
 
   depends_on 'go' => :build
 
