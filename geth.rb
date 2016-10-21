@@ -1,6 +1,6 @@
 require 'formula'
 
-class Ethereum < Formula
+class Geth < Formula
   version '3.0.1'
 
   homepage 'https://github.com/ethereumproject/go-ethereum'
