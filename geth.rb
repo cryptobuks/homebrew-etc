@@ -5,7 +5,8 @@ class Geth < Formula
 
   homepage 'https://github.com/ethereumproject/go-ethereum'
   url 'https://github.com/ethereumproject/go-ethereum/archive/v3.0.1.tar.gz'
-
+  sha256 'e174c5cc7abaaf7cc099ba10dde019fc3b4d2add1edff16b1ed8a241e0b958c3'
+  
   depends_on 'go' => :build
 
   def install
