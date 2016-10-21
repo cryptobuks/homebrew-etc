@@ -10,8 +10,8 @@ class Parity < Formula
     version '1.3.9'
     url 'https://github.com/ethcore/parity.git', :tag => 'v1.3.9', :using => :git
   else
-    version '1.2.4'
-    url 'https://github.com/ethcore/parity.git', :branch => 'stable', :using => :git
+    version '1.3.9'
+    url 'https://github.com/ethcore/parity.git', :tag => 'v1.3.9', :using => :git
   end
 
   depends_on 'multirust' => :build
@@ -44,6 +44,7 @@ class Parity < Formula
         <key>ProgramArguments</key>
         <array>
           <string>#{prefix}/bin/parity</string>
+          <string>--chain=classic</string>
           #{'<string>--geth</string>' if build.include? 'geth-compatible'}
         </array>
         <key>WorkingDirectory</key>
