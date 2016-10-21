@@ -1,7 +1,6 @@
-# homebrew-ethcore
-Homebrew Tap for ethcore.
+Homebrew Tap for Ethereum Classic (ETC)
 
-### Getting Homebrew
+## Getting Homebrew
 
 Homebrew is the missing package manager for OSX. You can find installation instructions at www.brew.sh. Alternatively open your terminal and type in:
 
@@ -9,42 +8,54 @@ Homebrew is the missing package manager for OSX. You can find installation instr
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### Adding Parity to your list of Homebrew 'kegs'
+## Adding Homebrew tap for Ethereum Classic (ETC)
 
-Open your terminal and enter:
+ETC is not part of standard Homebrew, so you need to add a tap first. Open your terminal and enter:
 
 ```
-brew tap ethcore/ethcore
+brew tap ethereumclassic/etc
 ```
 
-### Installing Parity
+## Installing ETC client software
 
-If you wish to download and install the latest **stable** version of Parity (currently 1.2.4), open your terminal and enter:
+### Geth (Go client)
+```
+brew install geth
+```
+
+### Eth (C++ client)
+```
+brew install eth
+brew linkapps eth
+```
+
+### Parity
 
 ```
 brew install parity
 ```
 
-If you would prefer to use the latest **beta** release (currently 1.3.8), open your terminal and enter:
+If you want to run Parity in a geth-compatible mode (as a backend for Mist/RPC):
 
 ```
-brew install parity --beta
+brew install parity --geth-compatible
 ```
 
-If you would prefer to use the latest **develop** release (currently 1.4.0), open your terminal and enter:
+Other Ethcore utilities:
 
 ```
-brew install parity --master
+brew install ethabi
+brew install ethkey
+brew install ethstore
 ```
 
-In order to update Parity to the latest version use:
+## Updates and minor upgrades
+In order to update software to the latest version use:
 
 ```
-brew update && brew upgrade parity
+brew update && brew upgrade <package_name>
 ```
 
-and
-
 ```
-brew reinstall parity
+brew update && brew reinstall <package_name>
 ```
