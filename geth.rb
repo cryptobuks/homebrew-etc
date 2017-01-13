@@ -1,12 +1,12 @@
 require 'formula'
 
 class Geth < Formula
-  version '3.0.1'
+  version '3.2.3'
 
   homepage 'https://github.com/ethereumproject/go-ethereum'
-  url 'https://github.com/ethereumproject/go-ethereum/archive/v3.0.1.tar.gz'
-  sha256 'e174c5cc7abaaf7cc099ba10dde019fc3b4d2add1edff16b1ed8a241e0b958c3'
-  
+  url 'https://github.com/ethereumproject/go-ethereum/releases/download/v3.2.3/geth-classic-darwin-2b51918.zip'
+  sha256 '50451aca0260b9af8faefc61a0f4afcf47e948b1065d4e1dfcafc475d18cee8d'
+
   depends_on 'go' => :build
 
   def install
